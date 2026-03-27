@@ -26,7 +26,7 @@ Known Issues:
 -->
    
    <head>
-      <title>This or That</title>  
+      <title>New Running Shoes?</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="w3.css">
@@ -102,7 +102,7 @@ footer {
 
 
 <body>
-<div id="header" class="w3-container w3-flat-peter-river">
+<div id="header" class="w3-container w3-flat-peter-river"> <!--changed the colors of the headers-->
     <h1> Should You Replace Your Running Shoes? </h1>
 </div>
 <!--this section displays the content that the user sees immediately upon opening the website-->
@@ -110,7 +110,7 @@ footer {
     <p>Are your runs feeling slow, sluggish, or small pains are occuring? Fill out this survey to see if you should replace your running shoes!</p> <!--Introduce the user to the website-->
 
 
-    <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- this line presents the first button that users click to proceed to page one-->
+    <a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- This is the frst page-->
    
     <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at        Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code          does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
    
@@ -125,8 +125,8 @@ footer {
    
         <div id="content" class="w3-container"> <!--creating the question and buttons for Q1-->
         <p> Is the rubber outsole worn through to the foam? </p> <!--I asked the question for Question 1 (Q1) here.-->  
-        <a href="#two" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes</a> <!-- Create Yes (Watery) button for Q1. If clicked, adds one to allergy_count-->
-        <a href="#two" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Itchy) button for Q1. If clicked, adds one to cold_count-->
+        <a href="#two" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes</a> <!-- the yes button, if clicked, adds one to newshoe_count-->
+        <a href="#two" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- the No button for Q1, If clicked, adds one to oldshoe_count-->
     </div>
 </div>
    
@@ -138,22 +138,22 @@ footer {
    
     <div id="content" class="w3-container"> <!--creating the question and buttons for Q2-->
         <p>Do they have more than 400 miles on them?</p> <!--I asked the question for Q2 here.-->
-        <a href="#three" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q2. If clicked, adds one to cold_count-->
-        <a href="#three" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q2. If clicked, adds one to allergy_count-->
+        <a href="#three" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q2. If clicked, adds one to newshoe_count-->
+        <a href="#three" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q2. If clicked, adds one to oldshoe_count-->
     </div>
 </div>  
    
 <!-- this section displays page for Question 3 and gives user the yes/no options-->
 <div class="page" id="three">
-    <div id="header" class="w3-container w3-flat-sun-flower"> <!--creating the header for Q3-->
+    <div id="header" class="w3-container w3-flat-sun-flower"> <!--creating the header for Q3, changed the color-->
         <h1>Question 3</h1>
     </div>
 
 
     <div id="content" class="w3-container"> <!--creating the question and buttons for Q3-->
         <p>Is there any visible damage on the upper part of the shoe? </p> <!--I asked the question for Q3 here.-->
-        <a href="#four" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create Yes button for Q3. If clicked, adds one to cold_count-->
-        <a href="#four" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create No button for Q3. If clicked, adds one to allergy_count-->
+        <a href="#four" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create Yes button for Q3. If clicked, adds one to oldshoe_count-->
+        <a href="#four" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create No button for Q3. If clicked, adds one to newshoe_count-->
     </div>
 </div>
    
@@ -166,8 +166,8 @@ footer {
 
     <div id="content" class="w3-container">
         <p>Have you experienced any new soreness or slight pains? </p> <!--I asked the question for Q4 here.-->
-        <a href="#five" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to allergy_count-->
-        <a href="#five" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Chronic) button for Q4. If clicked, adds one to cold_count-->
+        <a href="#five" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Yes button for Q4. If clicked, adds one to newshoe_count-->
+        <a href="#five" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- No button for Q4. If clicked, adds one to oldshoe_count-->
     </div>
 </div>
 
@@ -181,8 +181,8 @@ footer {
 
     <div id="content" class="w3-container">
         <p> Are your original paces feeling like they require more effort to run?</p> <!--I asked the question for Q5 here.-->
-        <a href="#six" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to allergy_count-->
-        <a href="#six" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to cold_count-->
+        <a href="#six" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q5. If clicked, adds one to newshoe_count-->
+        <a href="#six" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No button for Q5. If clicked, adds one to oldshoe_count-->
     </div>
 </div>
 
@@ -196,8 +196,8 @@ footer {
 
     <div id="content" class="w3-container"> <!-- creating the content for Q6-->
         <p>Do you just want new shoes?</p> <!--I asked the question for Q6 here.-->
-        <a href="#seven" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q6. If clicked, adds one to cold_count-->
-        <a href="#seven" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create Yes button for Q6. If clicked, adds one to allergy_count-->
+        <a href="#seven" onclick="newshoeAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes button for Q6. If clicked, adds one to newshoe_count-->
+        <a href="#seven" onclick="oldshoeAdd();" class="w3-btn w3-orange"> No </a> <!-- Create Yes button for Q6. If clicked, adds one to oldshoe_count-->
     </div>
 </div>
 
@@ -215,8 +215,7 @@ footer {
     </div>
 </div>  
    
-
-
+<!-- footer at bottom of page, and changed the colors of them-->
 <footer class="w3-bottom w3-container w3-flat-concrete">
     <p>DIY!</p>
 </footer>
